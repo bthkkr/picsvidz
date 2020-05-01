@@ -1,0 +1,17 @@
+.photo-list-header {
+	margin-left: 20px;
+	color: rgb(73, 32, 122);
+}
+
+.photo {
+	width: 200px;
+    height: 200px;
+    margin-top: -3px;
+	padding: 100px;
+}
+
+.data-grid {
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr;
+	
+}
