@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import Nav from './Nav.js';
 
-function Header() {
+function Header(props) {
 	return (
 		<div className='header'>
 			<div className='container'>
@@ -23,11 +23,14 @@ function Header() {
 						<input
 							type='text'
 							placeholder='Search for photos and videos...'
+							value={props.searchValue}
+							onChange={props.handleOnChange}
 						></input>
 
 						<img
 							src={process.env.PUBLIC_URL + `/images/search.png`}
 							alt='SearchImg'
+							onClick={props.handleSearch}
 						/>
 					</div>
 				</div>
